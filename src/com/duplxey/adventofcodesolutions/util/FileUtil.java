@@ -19,6 +19,6 @@ public class FileUtil {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        return builder.toString();
+        return builder.toString().substring(0, builder.toString().length()-2);
     }
 }
